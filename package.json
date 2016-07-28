@@ -1,0 +1,28 @@
+{
+  "name": "lodash-exercises",
+  "version": "1.0.0",
+  "description": "exercises with lodash and mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karolbilicki/lodash-exercises.git"
+  },
+  "keywords": [
+    "lodash",
+    "mocha",
+    "exercises"
+  ],
+  "author": "karolbilicki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karolbilicki/lodash-exercises/issues"
+  },
+  "homepage": "https://github.com/karolbilicki/lodash-exercises#readme",
+  "dependencies": {
+    "lodash": "^4.14.0",
+    "mocha": "^2.5.3"
+  }
+}
