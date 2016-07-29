@@ -36,7 +36,20 @@ describe('lodash tests', function(){
 			expected = [["",0,null]];
 			assert.equal(JSON.stringify(current), JSON.stringify(expected));
 		});
-		it('', function(){
+		it('concat-1', function(){
+			current = _.concat([1,2,3], [[4]], 5,6,7)
+			expected = [1,2,3,[4],5,6,7];
+			assert.equal(JSON.stringify(current), JSON.stringify(expected));
+		});
+		it('concat-2', function(){
+			current = _.concat([1,2,3],[4,5,6,7])
+			expected = [1,2,3,4,5,6,7];
+			assert.equal(JSON.stringify(current), JSON.stringify(expected));
+		});
+		it('concat-3', function(){
+			current = _.concat([1,2,3],[4,5,6,7], ["",""],"")
+			expected = [1,2,3,4,5,6,7,"","",""];
+			assert.equal(JSON.stringify(current), JSON.stringify(expected));
 		});
 	});
 });
